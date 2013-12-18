@@ -22,3 +22,5 @@ Contains 2 parts:
             def fetch( login ):
                 o = User()
                 return o.fetchObject( "login = '" + o.escapeString( login ) + "'" )
+        
+        user = User.fetch( "admin" )
